@@ -1,5 +1,5 @@
 ﻿using ClubeDeLeitura.Compartilhado;
 
-namespace ClubeDeLeitura.Modulo_Revista;
+namespace ClubeDeLeitura.ModuloRevista;
 
 public class ServicoRevista : ServicoBase<Revista ,RepositorioRevista>;

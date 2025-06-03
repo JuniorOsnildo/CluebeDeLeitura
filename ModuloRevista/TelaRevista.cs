@@ -1,7 +1,6 @@
 ﻿using ClubeDeLeitura.Compartilhado;
 using ClubeDeLeitura.ModuloCaixa;
-
-namespace ClubeDeLeitura.Modulo_Revista;
+namespace ClubeDeLeitura.ModuloRevista;
 
 public class TelaRevista : TelaBase<Revista>
 {

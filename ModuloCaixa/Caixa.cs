@@ -1,5 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 using ClubeDeLeitura.Compartilhado;
+using ClubeDeLeitura.ModuloRevista;
 
 namespace ClubeDeLeitura.ModuloCaixa;
 
@@ -22,11 +23,24 @@ public partial class Caixa : EntidadeBase
         Revistas = [];
     }
 
+    public void AdicionarRevista(Revista revista)
+    {
+        Revistas.Add(revista);
+    }
+
+    public void RemoverRevista(Revista revista)
+    {
+        foreach (var r in Revistas.Where(r => r.Nome == revista.Nome && r.Edicao == revista.Edicao))
+        {
+            Revistas.Remove(r);
+        }
+    }
+
     public override string ToString()
     {
         return $"Nome: {Nome}\n" +
                $"Cor {Cor}\n" +
-               $"Emprestimo: 7 dias";
+               $"ModuloEmprestimo: 7 dias";
     }
     
     [GeneratedRegex(@"^\#[0-9A-Fa-f]{6}$")]

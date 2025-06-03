@@ -7,7 +7,8 @@ public partial class Amigo : EntidadeBase
 {
     public string Responsavel { get; set; }
     public string Telefone  { get; set; }
-    public Revista? Emprestimo { get; set; }
+    public ModuloEmprestimo.Emprestimo? Emprestimo { get; set; }
+    
 
     public Amigo(string nome, string telefone, string responsavel)
     {
@@ -33,10 +34,15 @@ public partial class Amigo : EntidadeBase
 
     public override string ToString()
     {
+        var e = " -- ";
+        if (Emprestimo != null)
+            e = Emprestimo.Nome;
+            
+        
         return $"Nome: {Nome}\n" +
                $"Responsavel: {Responsavel}\n" +
                $"Telefone {Telefone}\n" +
-               $"Emprestimo: "Emprestimo == null ? " -- " : $"{Emprestimo.nome}";  
+               $"Emprestimo: {e}";  
     }
 
     [GeneratedRegex(@"^\([0-9]{2}\)[0-9]{4,5}\-[0-9]{4}$")]
