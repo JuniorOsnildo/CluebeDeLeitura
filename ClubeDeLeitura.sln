@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubeDeLeitura", "ClubeDeLeitura.csproj", "{994C26C3-A8DD-4ED7-9991-8FD9BAB3656D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{994C26C3-A8DD-4ED7-9991-8FD9BAB3656D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{994C26C3-A8DD-4ED7-9991-8FD9BAB3656D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{994C26C3-A8DD-4ED7-9991-8FD9BAB3656D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{994C26C3-A8DD-4ED7-9991-8FD9BAB3656D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
