@@ -23,7 +23,7 @@ public class TelaCaixa : TelaBase<Caixa>
     
     public override void Cadastrar()
     {
-        Console.WriteLine("Digite o nome do amigo: ");
+        Console.WriteLine("Digite a etiqueta da caixa: ");
         Console.Write("-> ");
         var nome = Console.ReadLine();
         Console.WriteLine("\nDigite o código hexadecimal da cor: ");
@@ -44,7 +44,7 @@ public class TelaCaixa : TelaBase<Caixa>
 
     public override void Listar()
     {
-        Console.WriteLine(Servico.ObterTodos());
+        Servico.ObterTodos();
     }
 
     public override void Editar()

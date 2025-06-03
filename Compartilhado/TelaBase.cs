@@ -4,7 +4,7 @@ public abstract class TelaBase <T> where T : EntidadeBase
 {
     public void ExibirMenuBase()
     {
-        Console.WriteLine($"\n--- Gestão de {nameof(T)} ---");
+        Console.WriteLine($"\n--- Gestão ---");
         Console.WriteLine("1. Cadastrar");
         Console.WriteLine("2. Listar");
         Console.WriteLine("3. Editar");

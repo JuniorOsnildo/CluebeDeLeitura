@@ -13,7 +13,7 @@ public class ServicoBase<T, TRepossitorio>
         Repositorio.Inserir(entidade);
     }
 
-    public List<T> ObterTodos() => Repositorio.ListarTodos();
+    public void ObterTodos() => Repositorio.ListarTodos();
 
     public T? ObterPorNome(string nome) => Repositorio.ObterPorNome(nome);
 

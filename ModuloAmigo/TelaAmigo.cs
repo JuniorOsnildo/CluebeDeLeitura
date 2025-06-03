@@ -47,7 +47,7 @@ public class TelaAmigo : TelaBase<Amigo>
 
     public override void Listar()
     {
-        Console.WriteLine(Servico.ObterTodos());
+        Servico.ObterTodos();
     }
 
     public override void Editar()

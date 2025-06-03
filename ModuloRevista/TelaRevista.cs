@@ -35,7 +35,7 @@ public class TelaRevista : TelaBase<Revista>
         var data = DateTime.Parse(Console.ReadLine());
 
         Console.WriteLine();
-        Console.WriteLine(SerCaixas.ObterTodos());
+        SerCaixas.ObterTodos();
         Console.WriteLine();
         
         Console.WriteLine("Digite a nome da caixa: ");
@@ -58,7 +58,7 @@ public class TelaRevista : TelaBase<Revista>
 
     public override void Listar()
     {
-        Console.WriteLine(SerRevistas.ObterTodos());
+        SerRevistas.ObterTodos();
     }
 
     public override void Editar()
@@ -79,7 +79,7 @@ public class TelaRevista : TelaBase<Revista>
         var data = DateTime.Parse(Console.ReadLine());
 
         Console.WriteLine();
-        Console.WriteLine(SerCaixas.ObterTodos());
+        SerCaixas.ObterTodos();
         Console.WriteLine();
         
         Console.WriteLine("Digite a nome da caixa: ");

@@ -15,9 +15,9 @@ public partial class Revista : EntidadeBase
     {
         if (string.IsNullOrWhiteSpace(nome) || nome.Length < 2 || nome.Length > 100)
             throw new ArgumentException("O nome deve ter entre 2 e 100 caracteres");
-        if (edicao <= 1)
+        if (edicao < 1)
             throw new ArgumentException("O numero da edição deve ser maior que 0");
-        if (string.IsNullOrWhiteSpace(data.ToString()) || (data - DateTime.Now).Days < 0)
+        if (string.IsNullOrWhiteSpace(data.ToString()))
             throw new ArgumentException("A data ser valida");
 
         Nome = nome;

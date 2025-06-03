@@ -28,9 +28,12 @@ public class RepositorioBase<T> where T : EntidadeBase
         return Registro.FirstOrDefault(e => e.Nome == nome);
     }
 
-    public virtual List<T> ListarTodos()
+    public virtual void ListarTodos()
     {
-        return [..Registro];
+        foreach (var e in Registro)
+        {
+            Console.WriteLine(e.ToString());
+        }
     }
     
     

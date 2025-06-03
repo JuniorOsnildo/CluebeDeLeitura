@@ -18,8 +18,8 @@ public partial class Amigo : EntidadeBase
             throw new ArgumentException("O numero de telefone não pode ser vazio");
         if (string.IsNullOrWhiteSpace(responsavel))
             throw new ArgumentException("O nome do responsavel não pode ser vazio");
-        if (!MyRegex().IsMatch(telefone))
-            throw new ArgumentException("Fromato de telefone invalido");
+        if (MyRegex().IsMatch(telefone))
+            throw new ArgumentException("Formato de telefone invalido");
             
         Nome = nome;
         Responsavel = responsavel;
@@ -27,9 +27,9 @@ public partial class Amigo : EntidadeBase
         Emprestimo = null;
     }
 
-    public void ObterEmprestimo()
+    public void ObterEmprestimo(ModuloEmprestimo.Emprestimo emprestimo)
     {
-        
+        Emprestimo = emprestimo;
     }
 
     public override string ToString()

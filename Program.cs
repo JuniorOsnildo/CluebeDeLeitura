@@ -10,7 +10,7 @@ TelaEmprestimo menuEmprestimo = new();
 
 while (true)
 {
-    Console.WriteLine("\n1. Amigos\n2. Caixas \nRevistas \n0. Sair");
+    Console.WriteLine("\n1. Amigos\n2. Caixas \n3. Revistas \n4. Emprestimo \n0. Sair");
     switch (Console.ReadLine())
     {
         case "1": 

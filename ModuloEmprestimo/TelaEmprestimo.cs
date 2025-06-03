@@ -61,17 +61,20 @@ public class TelaEmprestimo : TelaBase<ModuloEmprestimo.Emprestimo>
             var entidade = new ModuloEmprestimo.Emprestimo(ServicoAmigo.ObterPorNome(amigo)
                                             ,ServicoRevista.ObterPorNome(revista));
             Servico.Adicionar(entidade);
+            ServicoAmigo.ObterPorNome(amigo).ObterEmprestimo(entidade);
         }
         catch (Exception e)
         {
             Console.WriteLine(e);
             throw;
         }
+        
+        
     }
 
     public override void Listar()
     {
-        Console.WriteLine(Servico.ObterTodos());
+        Servico.ObterTodos();
     }
 
     public override void Editar()
