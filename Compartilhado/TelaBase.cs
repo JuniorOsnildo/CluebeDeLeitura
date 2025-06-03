@@ -1,12 +1,10 @@
 ﻿namespace ClubeDeLeitura.Compartilhado;
 
-public abstract class TelaBase(string nomeEntidade)
+public abstract class TelaBase <T> where T : EntidadeBase
 {
-    public string NomeEntidade { get; } = nomeEntidade;
-
     public void ExibirMenuBase()
     {
-        Console.WriteLine($"\n--- Gestão de {NomeEntidade} ---");
+        Console.WriteLine($"\n--- Gestão de {nameof(T)} ---");
         Console.WriteLine("1. Cadastrar");
         Console.WriteLine("2. Listar");
         Console.WriteLine("3. Editar");
