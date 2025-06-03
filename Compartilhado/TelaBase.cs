@@ -2,7 +2,7 @@
 
 public abstract class TelaBase(string nomeEntidade)
 {
-    protected string NomeEntidade { get; } = nomeEntidade;
+    public string NomeEntidade { get; } = nomeEntidade;
 
     public void ExibirMenuBase()
     {
